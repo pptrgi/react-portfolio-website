@@ -8,7 +8,7 @@ function About() {
             <span className='text-textColor text-smallFontSize font-normalWeight'>Portfolio's Techstack and My Introduction</span>
             <div className='mt-[4rem] flex flex-col-reverse items-center gap-[3rem] sm:flex-row sm:gap-[0.75rem] lg:gap-[1rem]'>
                 <div className='sm:w-1/2 sm:flex sm:justify-center'>
-                    <img src="./src/assets/forAbout.png" className='w-[250px] rounded-xl sm:w-[250px] md:w-[280px] lg:w-[300px]' alt="PeterAbout" />
+                    <img src="/images/forAbout.png" className='w-[250px] rounded-xl sm:w-[250px] md:w-[280px] lg:w-[300px]' alt="PeterAbout" />
                 </div>
                 <div className='flex flex-col-reverse justify-between pl-[0.75rem] pr-[0.25rem] h-[450px] text-left sm:w-1/2 sm:flex-col md:h-[450px] lg:h-[400px]'>
                     <p className='text-textColor leading-5 text-smallFontSize font-normalWeight sm:leading-tight sm:text-smallFontSize md:text-normalFontSize md:leading-5'>Hello! My name is Peter and I'm passionate about bringing both the technical and visual aspects of digital products to life. 

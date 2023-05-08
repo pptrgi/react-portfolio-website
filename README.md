@@ -26,6 +26,9 @@ This will open the app in your default browser at http://localhost:3000
 ## Usage
 Once you have the development server running, you can start using and modifying the app to your liking.
 
+## License
+This project is licensed under the MIT License.
+
 ## Contributing
 If you would like to contribute to this project, please open a pull request. 
 
@@ -34,4 +37,4 @@ If you would like to contribute to this project, please open a pull request.
 - Thanks Font Awesome for the icons used in this application
 - Emailjs provides the email service
 - To view the detail page for individual projects is thanks to React Router
-- Special thanks to Tailwind CSS framework for styling the app
+- Special thanks to Tailwind CSS framework for its use in styling the app

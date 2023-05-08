@@ -18,9 +18,7 @@ function Project() {
             </ul><br />
             There's still a lot of work to be done, but this sets the foundation for the project.
           </div>,
-          image: <img src='../src/assets/blogwin.png' className='rounded-lg'/>,
-          gitHub: <a href="#" className='bg-titleColor p-6 px-4 py-2 text-containerColor font-mediumWeight rounded-full'>GitHub {'>'}</a>,
-          detailPage: <span className='bg-titleColor p-6 px-4 py-2 text-containerColor font-mediumWeight rounded-full'>View {'>'}</span>,
+          image: <img src='/images/blogwin.PNG' className='rounded-lg'/>,
           techStack: ["Django", "Vanilla CSS", "HTML"]
       },
       {
@@ -38,9 +36,7 @@ function Project() {
             <li>Display for all existing tasks</li>
           </ul>
         </div>,
-        image: <img src='../src/assets/todo.png' className='rounded-lg'/>,
-        gitHub: <a href="#" className='bg-titleColor p-6 px-4 py-2 text-containerColor font-mediumWeight rounded-full'>GitHub {'>'}</a>,
-        detailPage: <span href="#" className='bg-titleColor p-6 px-4 py-2 text-containerColor font-mediumWeight rounded-full'>View {'>'}</span>,
+        image: <img src='/images/todo.PNG' className='rounded-lg'/>,
         techStack: ["JavaScript", "HTML", "Vanilla CSS"]
       },
       {
@@ -55,13 +51,11 @@ function Project() {
                 <li>Projects section with a detail page for each project and a link to the project's github repository</li>
                 <li>Skills section with skill name and its respective icon</li>
                 <li>Services section with 3 service cards</li>
-                <li>Contacts section email, WhatsApp, call and direct message form</li>
+                <li>Contacts section supports email, WhatsApp, copy-to-clipboard for a call and direct message form</li>
                 <li>The Footer with social media profiles and section titles links, and copyright information</li>
               </ul>
             </div>,
-          image: <img src='../src/assets/personal-web.png' className='rounded-lg'/>,
-          gitHub: <a href="#" className='bg-titleColor p-6 px-4 py-2 text-containerColor font-mediumWeight rounded-full'>GitHub {'>'}</a>,
-          detailPage: <span href="#" className='bg-titleColor p-6 px-4 py-2 text-containerColor font-mediumWeight rounded-full'>View {'>'}</span>,
+          image: <img src='/images/personal-web.PNG' className='rounded-lg'/>,
           techStack: ["React", "Tailwind","Emailjs", "React Router", "Font Awesome"]
       },
    
@@ -69,9 +63,7 @@ function Project() {
           id: 4,
           title: <span className='bg-transparent text-h2FontSize text-red-400 font-mediumWeight italic'>Coming soon</span>,
           description: <div className='text-textColor text-smallFontSize bg-transparent opacity-10'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut quia consectetur porro enim quos doloremque culpa nihil? Repellendus, possimus vitae.</div>,
-          image: <img src='../src/assets/no-image.png' className='rounded-lg'/>,
-          gitHub: <a href="#" className='bg-titleColor p-6 px-4 py-2 text-containerColor font-mediumWeight rounded-full disabled opacity-10'>GitHub {'>'}</a>,
-          detailPage: <span href="#" className='bg-titleColor p-6 px-4 py-2 text-containerColor font-mediumWeight rounded-full disabled opacity-10'>View {'>'}</span>,
+          image: <img src='/images/no-image.png' className='rounded-lg'/>,
           techStack: []
       }
   ])
@@ -88,7 +80,7 @@ function Project() {
                   <div className='sm:w-1/2'>
                     {project.image}
                   </div>
-                  <div className='flex flex-col justify-between items-center h-[550px] sm:w-1/2 sm:h-[600px] md:h-[450px] lg:h-[420px]'>
+                  <div className='flex flex-col justify-between items-center h-[550px] sm:w-1/2 sm:h-[600px] md:h-[450px] lg:h-[470px]'>
                     <div className='flex gap-3 flex-wrap'>
                       {(project.techStack).map(tech => <span key={tech} className="text-titleColor text-smallFontSize font-mediumWeight px-[0.75rem] py-[0.25rem] border-2 border-titleColor">{tech}</span>)}
                     </div>
