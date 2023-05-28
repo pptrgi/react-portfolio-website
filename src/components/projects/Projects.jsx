@@ -11,7 +11,6 @@ function Projects() {
             image: <img src='/images/blogwin.PNG' className='absolute object-cover h-full w-full'/>,
             gitHub: <a href="https://github.com/pptrgi/django-fullstack-blogposts" className='bg-titleColor p-6 px-4 py-2 text-containerColor font-mediumWeight rounded-full hover:bg-titleColorDark'>GitHub {'>'}</a>,
             detailPage: <span className='bg-titleColor p-6 px-4 py-2 text-containerColor font-mediumWeight rounded-full hover:bg-titleColorDark'>View {'>'}</span>,
-            techStack: ["Django", "Vanilla CSS"]
         },
         {
             id: 2,
@@ -20,25 +19,30 @@ function Projects() {
             image: <img src='/images/todo.PNG' className='absolute object-cover h-full w-full'/>,
             gitHub: <a href="https://github.com/pptrgi/todo-vanilla-JS" className='bg-titleColor p-6 px-4 py-2 text-containerColor font-mediumWeight rounded-full hover:bg-titleColorDark'>GitHub {'>'}</a>,
             detailPage: <span href="#" className='bg-titleColor p-6 px-4 py-2 text-containerColor font-mediumWeight rounded-full hover:bg-titleColorDark'>View {'>'}</span>,
-            techStack: ["React", "Django Rest FrameWork", "Tailwind CSS"]
         },
         {
             id: 3,
             title: <span className='bg-containerColor text-h2FontSize text-titleColor font-mediumWeight'>Personal Website</span>,
-            description: <p className='text-textColor text-smallFontSize bg-containerColor'>The website is built with React and styled with Tailwind. It features a modern design with a clear and concise navigation system, visually appealing landing page and sections for the bio, skills, services, projects and contact information, each with their own set of features.</p>,
+            description: <p className='text-textColor text-smallFontSize bg-containerColor'>A fully responsive site built with React on the frontend and integrated with M-Pesa (STK push) for payment service. It employs a number of technologies including Redux to manage the state of the cart operations, Express.js in the backend and Firebase for authentication.</p>,
             image: <img src='/images/personal-web.PNG' className='absolute object-cover h-full w-full'/>,
             gitHub: <a href="https://github.com/pptrgi/react-portfolio-website" className='bg-titleColor p-6 px-4 py-2 text-containerColor font-mediumWeight rounded-full hover:bg-titleColorDark'>GitHub {'>'}</a>,
             detailPage: <span href="#" className='bg-titleColor p-6 px-4 py-2 text-containerColor font-mediumWeight rounded-full hover:bg-titleColorDark'>View {'>'}</span>,
-            techStack: ["HTML", "Vanilla CSS", "JavaScript"]
         },
         {
             id: 4,
+            title: <a href="https://seedlingsbymwalim.vercel.app"><span className='bg-containerColor text-h2FontSize text-titleColor font-mediumWeight'>Seedlings by Mwalim</span></a>,
+            description: <p className='text-textColor text-smallFontSize bg-containerColor'>The website is built with React and styled with Tailwind. It features a modern design with a clear and concise navigation system, visually appealing landing page and sections for the bio, skills, services, projects and contact information, each with their own set of features.</p>,
+            image: <img src='/images/seedlingsByMwalim2.PNG' className='absolute object-cover h-full w-full'/>,
+            gitHub: <a href="https://github.com/pptrgi/seedlings-by-mwalim-ecommerce-website" className='bg-titleColor p-6 px-4 py-2 text-containerColor font-mediumWeight rounded-full hover:bg-titleColorDark'>GitHub {'>'}</a>,
+            detailPage: <span href="#" className='bg-titleColor p-6 px-4 py-2 text-containerColor font-mediumWeight rounded-full hover:bg-titleColorDark'>View {'>'}</span>,
+        },
+        {
+            id: 5,
             title: <span className='bg-containerColor text-h2FontSize text-red-400 font-mediumWeight italic'>Coming soon</span>,
             description: <p className='text-textColor text-smallFontSize bg-containerColor opacity-20'>I'm currently putting the finishing touches on this latest project and I can't wait to share it with you! While I cant't reveal too much just yet, I can promise it's going to be something truly special. Stay tuned for more information, sneak peeks and updates coming soon.</p>,
             image: <img src='/images/no-image.png' className='absolute object-cover h-full w-full opacity-20'/>,
             gitHub: <a href="#" className='bg-titleColor p-6 px-4 py-2 text-containerColor font-mediumWeight rounded-full pointer-events-none opacity-20'>GitHub {'>'}</a>,
             // detailPage: <span href="#" className='bg-titleColor p-6 px-4 py-2 text-containerColor font-mediumWeight rounded-full pointer-events-none opacit y-50'>View {'>'}</span>,
-            techStack: []
         }
     ])
 

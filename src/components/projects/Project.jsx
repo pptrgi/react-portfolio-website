@@ -58,9 +58,30 @@ function Project() {
           image: <img src='/images/personal-web.PNG' className='rounded-lg'/>,
           techStack: ["React", "Tailwind","Emailjs", "React Router", "Font Awesome"]
       },
-   
       {
-          id: 4,
+        id: 4,
+        title: <a href="https://seedlingsbymwalim.vercel.app"><span className='bg-transparent text-h2FontSize text-titleColor font-mediumWeight'>Seedlings by Mwalim</span></a>,
+        description: <div className='text-textColor text-smallFontSize bg-transparent'>Inspired by my uncle's (Mr. Njagi) seedlings farm, Seedlings By Mwalim is an online seedlings selling site that is integrated with M-Pesa for the payment service.<br /><br />
+        It is built with React on the frontend and the Express.js backend communicates with Safaricom's Daraja API. <br /><br />
+        The main features are
+        <ul className='list-disc ml-[1.5rem]'>
+          <li>M-Pesa STK push payment method</li>
+          <li>Fully responsive</li>
+          <li>Typing simulation on the landing page</li>
+          <li>Sign-in with popup by Google</li>
+          <li>Offer window period countdown</li>
+          <li>Swiper for recommended, best selling and all season products</li>
+          <li>Device local storage for state data</li>
+          <li>Navigation system with nav bar and hamburger menu</li>
+          <li>Email service by EmailJS</li>
+        </ul>
+      </div>,
+      image: <a href="https://seedlingsbymwalim.vercel.app"><img src='/images/seedlingsByMwalim2.PNG' className='rounded-lg'/></a>,
+      techStack: ["React", "Express.js","Firebase", "Redux", "Tailwind", "EmailJS", "Swiper", "Font Awesome", "React Router", "React Toastify", "React Persist", "Axios", "Typed.js"]
+    },
+      
+      {
+          id: 5,
           title: <span className='bg-transparent text-h2FontSize text-red-400 font-mediumWeight italic'>Coming soon</span>,
           description: <div className='text-textColor text-smallFontSize bg-transparent opacity-10'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut quia consectetur porro enim quos doloremque culpa nihil? Repellendus, possimus vitae.</div>,
           image: <img src='/images/no-image.png' className='rounded-lg'/>,

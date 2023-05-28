@@ -12,6 +12,7 @@ function ContactMeans() {
         setNumber('+254700119134')
         navigator.clipboard.writeText(number)
         setCopy(true)
+        setTimeout(() => setCopy(false), 2000)
     }
 
   return (

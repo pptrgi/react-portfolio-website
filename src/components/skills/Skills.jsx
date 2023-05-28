@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import {FaReact, FaCss3Alt, FaGitAlt, FaGithubSquare, FaHtml5, FaJsSquare, FaNodeJs, FaTerminal, FaLinux, FaDocker} from 'react-icons/fa';
 import { IoLogoPython } from 'react-icons/io';
-import {SiVisualstudiocode, SiTailwindcss, SiDjango, SiPostgresql, SiFirebase, SiWordpress, SiCanva, SiMongodb} from 'react-icons/si';
+import {SiVisualstudiocode, SiTailwindcss, SiDjango, SiPostgresql, SiFirebase, SiExpress, SiPostman, SiCanva, SiMongodb} from 'react-icons/si';
 
 function Skills() {
     const [skills, setSkills] = useState([
@@ -78,6 +78,21 @@ function Skills() {
         },
         {
             id: 15,
+            icon: <SiFirebase className='bg-transparent'/>,
+            name: "Firebase"
+        },
+        {
+            id: 16,
+            icon: <SiExpress className='bg-transparent'/>,
+            name: "Express.js"
+        },
+        {
+            id: 17,
+            icon: <SiPostman className='bg-transparent'/>,
+            name: "Postman"
+        },
+        {
+            id: 18,
             icon: <SiPostgresql className='bg-transparent'/>,
             name: "PostgreSQL"
         }
