@@ -1,20 +1,22 @@
 # Personal and Portfolio Website
 
-The website is built with React and styled with Tailwind, and uses react-icons and react-router-dom libraries.
-It features a modern design with a clear and concise navigation system that includes a hamburger menu for mobile devices. The landing page uses visually appealing contents that reverse order in mobile devices and include an image with a gradient background.
+The website is built with React and styled with Tailwind.
+
+It features a modern design with clear, concise and well-crafted sections that together make up a fully responsive site. The landing page contents are centered on the device's screen and they order according to the breakpoint in question. For easy navigation, the site includes a hamburger menu for mobile devices and a scroll down button. There's support for various contact means including contact form, Whatsapp and email service by EmailJS.
+
+The application has a single 'store' for the projects data. Using React Router library, loader data is provided to the Home component, which is the parent component to all components loading on the Home page therefore exposing the data to its children. useNavigate() passes the project object state to the project's detail page via the route.
+
 The website includes sections for the bio, skills, services, projects and contact information, each with their own set of features.
 
-Here are the main features of the website:
-1. Navigation system includes a navigation bar and hamburger menu
-1. In the contact section, Emailjs enables for sending of emails, and has copy-to-clipboard capability for my phone number
-1. Projects section includes a detail page for each project and a link to the project's github repository
+**Here are the main features of the website:**
+1. Navigation system includes a navigation bar, hamburger menu and a scroll down button
+1. Email service support by EmailJS library and phone number  copy-to-clipboard capability in the contacts section 
+1. Projects section includes a detail page for each project and links to the project's GitHub repository and the website
 1. Skills section displays each skill with its respective icon and name
-1. Three service cards with what services i offer and their descriptions in the services section
+1. Three fully responsive service cards with services offered and their descriptions in the services section
 1. About section includes the website's techstack and my bio
-1. Landing page has a contact button and a scroll down button that takes you to the following section
-1. The Footer includes links to my social media profiles and section titles, and copyright information
-
-Being the first commit, there's still a lot of work to be done, but this sets the foundation for the project.
+1. Landing page has centered contents and a scroll down button that takes you to the following section
+1. The Footer includes links to my social media profiles and quick links, and copyright information
 
 ## Installation
 1. Clone the repository to your local machine: `git clone git@github:pptrgi/react-portfolio-website.git`
