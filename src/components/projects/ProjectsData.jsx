@@ -1,5 +1,5 @@
 import React from "react";
-import blogWin from "/images/blogWin.png";
+import blogWin from "/images/blogWinDjango.png";
 import todoApp from "/images/todoApp.png";
 import personalWebsite from "/images/personalWebsite.png";
 import seedlingsByMwalim from "/images/seedlingsByMwalim.png";
