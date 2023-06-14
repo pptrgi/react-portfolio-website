@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import nim from '/images/blogwin.png'
+
 
 function ProjectCard({project}) {
     const navigate = useNavigate()
