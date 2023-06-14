@@ -16,14 +16,12 @@ function About() {
                     I'm happiest when I'm creating, learning, exploring and thinking about how to make things better.
                     I am available for any project, and also feel free to reach out and say hello.</p>
                     <div className='flex gap-2 flex-wrap'>
-                        <span className="text-textColor text-smallFontSize font-mediumWeight px-[0.75rem] py-[0.25rem] border-2 border-textColor">JavaScript</span>
-                        <span className="text-textColor text-smallFontSize font-mediumWeight px-[0.75rem] py-[0.25rem] border-2 border-textColor">React</span>
-                        <span className="text-textColor text-smallFontSize font-mediumWeight px-[0.75rem] py-[0.25rem] border-2 border-textColor">Tailwind</span>
-                        <span className="text-textColor text-smallFontSize font-mediumWeight px-[0.75rem] py-[0.25rem] border-2 border-textColor">Emailjs</span>
-                        <span className="text-textColor text-smallFontSize font-mediumWeight px-[0.75rem] py-[0.25rem] border-2 border-textColor">React Router</span>
-                        {/* <span className="text-textColor text-smallFontSize font-mediumWeight px-[0.75rem] py-[0.25rem] border-2 border-textColor">GitHub</span> */}
-                        <span className="text-textColor text-smallFontSize font-mediumWeight px-[0.75rem] py-[0.25rem] border-2 border-textColor">Font Awesome</span>
-                        <span className="text-textColor text-smallFontSize font-mediumWeight px-[0.75rem] py-[0.25rem] border-2 border-textColor">HTML</span>
+                        <span className='text-textColor text-smallFontSize px-[0.5rem] py-[0.125rem] border-[2px] border-textColor'>React</span>
+                        <span className='text-textColor text-smallFontSize px-[0.5rem] py-[0.125rem] border-[2px] border-textColor'>Tailwind</span>
+                        <span className='text-textColor text-smallFontSize px-[0.5rem] py-[0.125rem] border-[2px] border-textColor'>JavaScript</span>
+                        <span className='text-textColor text-smallFontSize px-[0.5rem] py-[0.125rem] border-[2px] border-textColor'>EmailJS</span>
+                        <span className='text-textColor text-smallFontSize px-[0.5rem] py-[0.125rem] border-[2px] border-textColor'>React Router</span>
+                        <span className='text-textColor text-smallFontSize px-[0.5rem] py-[0.125rem] border-[2px] border-textColor'>Font Awesome</span>
                     </div>
                 </div>
             </div>  

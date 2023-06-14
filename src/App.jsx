@@ -1,28 +1,46 @@
+import {createBrowserRouter, Outlet, ScrollRestoration, RouterProvider} from 'react-router-dom'
 import Header from './components/header/Header';
-import LandingPage from './components/landingPage/LandingPage';
 import Footer from './components/footer/Footer';
-import Skills from './components/skills/Skills';
-import Services from './components/services/Services';
-import Projects from './components/projects/Projects';
-import Contact from './components/contact/Contact';
-import About from './components/about/About';
+import Home from './pages/Home';
+import { serveProjects } from './components/projects/ProjectsData';
+import ProjectDetailPage from './components/projects/ProjectDetailPage';
+import Resume from './pages/Resume';
 import './App.css';
 
-function App() {
 
+function App() {
+    const Layout = () => {
+        return (
+            <div>
+                <Header />
+                <ScrollRestoration />
+                <Outlet />
+                <Footer />
+            </div>
+        )
+    }
+    const router = createBrowserRouter([{
+        path: '/',
+        element: <Layout />,
+        children: [
+            {
+                path: '/',
+                element: <Home />,
+                loader: serveProjects
+            }, 
+            {
+                path: '/project/:id',
+                element: <ProjectDetailPage />
+            },
+            {
+                path:'/cv',
+                element: <Resume />
+            }
+        ]
+    }])
   return (
-    <div className="">
-      <Header />
-      <main>
-        <LandingPage />
-        <About />
-        <Skills />
-        <Services />
-        <Projects />
-        <Contact />
-      </main>
-      <Footer />
-      
+    <div>
+        <RouterProvider router={router} />
     </div>
   )
 }

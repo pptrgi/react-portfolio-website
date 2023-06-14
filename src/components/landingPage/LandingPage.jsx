@@ -6,24 +6,29 @@ import {BiDownArrowAlt} from 'react-icons/bi';
 
 const LandingPage = () => {
   return (
-    <section className='section min-h-screen h-auto' id='homeSection'>
-      <div className='container' id='portraitContainer'>
-        <div className='flex flex-col-reverse gap-14 items-center sm:flex-row sm:gap-8 md:gap-6 lg:gap-[7.5rem] sm:mt-[4rem]'>
-          <div className="w-fit" >
-            <SocialIcons />
+    <section className='section min-h-screen flex justify-center items-center' >
+      <div className='container'>
+          <div className='flex flex-col justify-between items-center h-[85vh] w-full sm:h-[50vh] lg:h-[70vh]'>
+            <div className='flex flex-col-reverse items-center gap-[3rem] w-full sm:gap-[0.25rem] sm:flex-row'>
+              <div className="sm: w-2/12" >
+                <SocialIcons />
+              </div>
+              <div className='flex flex-col-reverse items-center gap-4 sm:flex-row sm:w-10/12'>
+                <div className='sm:w-2/3'>
+                  <Titles />
+                </div>
+                <div className='sm:w-1/3'>
+                  <Image />
+                </div>
+              </div>
+            </div>
+            <div className='flex gap-1 items-center group text-titleColor font-normalWeight text-[1.125rem] hover:font-mediumWeight hover:text-titleColorDark cursor-pointer'>
+              <a href="#about">scroll</a>
+              <BiDownArrowAlt className='group-hover:translate-y-1' />
+            </div>
           </div>
-          <div className='flex flex-col-reverse gap-6 items-center sm:flex-row sm:gap-4 md:gap-6 lg:gap-[7.5rem]'>
-            <Titles />
-            <Image />
-          </div>
-        </div>
-        <div className='block text-center mt-[7rem] sm:mt-[12rem] lg:mt-[16rem]' id='exploreBtn'>
-          <a href="#about" className='text-titleColor font-normalWeight text-[1.125rem] ml-[2px] hover:font-mediumWeight hover:text-titleColorDark'>explore<BiDownArrowAlt className='inline-block text-titleColor text-[1.15rem] ml-[0.10rem] hover:font-mediumWeight hover:text-titleColorDark' /></a>
-        </div>
-      </div>
-
+      </div>   
     </section>
-
   )
 }
 

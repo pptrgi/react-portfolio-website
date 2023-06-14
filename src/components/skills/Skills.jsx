@@ -107,9 +107,9 @@ function Skills() {
         <div className='container mt-[4rem]'>
             <div className='grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-3 md:gap-4 md:grid-cols-4 lg:gap-3 lg:grid-cols-5'>
                 
-                    {skills.map(skill => {
+                    {skills.map((skill, index) => {
                         return (
-                            <div className="bg-containerColor rounded-[1.25rem] shadow-md px-[2rem] py-[1rem]">
+                            <div key={index} className="bg-containerColor rounded-[1.25rem] shadow-md px-[2rem] py-[1rem]">
                                 <div key={skill.id} className='flex flex-col space-y-4 items-center bg-containerColor'>
                                     <span className="bg-containerColor text-textColor text-[4rem] sm:text-[4.5rem] md:text-[5rem] lg:text-[5.5rem]">{skill.icon}</span>
                                     <span className='bg-containerColor text-smallFontSize font-mediumWeight text-titleColor'>{skill.name}</span>
@@ -117,57 +117,6 @@ function Skills() {
                             </div>
                         )
                     })}
-                    
-                
-                {/* <div className="bg-containerColor rounded-[1.25rem] shadow-md px-[2rem] py-[1rem]">
-                    <div className='flex flex-col space-y-4 items-center bg-containerColor'>
-                        <FaCss3Alt className="bg-containerColor text-textColor text-[4rem] sm:text-[4.5rem] md:text-[5rem] lg:text-[5.5rem]" />
-                        <span className='bg-containerColor text-smallFontSize font-mediumWeight text-titleColor'>CSS</span>
-                    </div>
-                </div>
-                <div className="bg-containerColor rounded-[1.25rem] shadow-md px-[2rem] py-[1rem]">
-                    <div className='flex flex-col space-y-4 items-center bg-containerColor'>
-                        <FaReact className="bg-containerColor text-textColor text-[4rem] sm:text-[4.5rem] md:text-[5rem] lg:text-[5.5rem]" />
-                        <span className='bg-containerColor text-smallFontSize font-mediumWeight text-titleColor'>React</span>
-                    </div>
-                </div>
-                <div className="bg-containerColor rounded-[1.25rem] shadow-md px-[2rem] py-[1rem]">
-                    <div className='flex flex-col space-y-4 items-center bg-containerColor'>
-                        <FaJsSquare className="bg-containerColor text-textColor text-[4rem] sm:text-[4.5rem] md:text-[5rem] lg:text-[5.5rem]" />
-                        <span className='bg-containerColor text-smallFontSize font-mediumWeight text-titleColor'>JavaScript</span>
-                    </div>
-                </div>
-                <div className="bg-containerColor rounded-[1.25rem] shadow-md px-[2rem] py-[1rem]">
-                    <div className='flex flex-col space-y-4 items-center bg-containerColor'>
-                        <IoLogoPython className="bg-containerColor text-textColor text-[4rem] sm:text-[4.5rem] md:text-[5rem] lg:text-[5.5rem]" />
-                        <span className='bg-containerColor text-smallFontSize font-mediumWeight text-titleColor'>Python</span>
-                    </div>
-                </div>
-                <div className="bg-containerColor rounded-[1.25rem] shadow-md px-[2rem] py-[1rem]">
-                    <div className='flex flex-col space-y-4 items-center bg-containerColor'>
-                        <FaGithubSquare className="bg-containerColor text-textColor text-[4rem] sm:text-[4.5rem] md:text-[5rem] lg:text-[5.5rem]" />
-                        <span className='bg-containerColor text-smallFontSize font-mediumWeight text-titleColor'>GitHub</span>
-                    </div>
-                </div>
-                <div className="bg-containerColor rounded-[1.25rem] shadow-md px-[2rem] py-[1rem]">
-                    <div className='flex flex-col space-y-4 items-center bg-containerColor'>
-                        <FaGitAlt className="bg-containerColor text-textColor text-[4rem] sm:text-[4.5rem] md:text-[5rem] lg:text-[5.5rem]" />
-                        <span className='bg-containerColor text-smallFontSize font-mediumWeight text-titleColor'>Git</span>
-                    </div>
-                </div>
-                <div className="bg-containerColor rounded-[1.25rem] shadow-md px-[2rem] py-[1rem]">
-                    <div className='flex flex-col space-y-4 items-center bg-containerColor'>
-                        <FaNodeJs className="bg-containerColor text-textColor text-[4rem] sm:text-[4.5rem] md:text-[5rem] lg:text-[5.5rem]" />
-                        <span className='bg-containerColor text-smallFontSize font-mediumWeight text-titleColor'>Node.js</span>
-                    </div>
-                </div>
-                <div className="bg-containerColor rounded-[1.25rem] shadow-md px-[2rem] py-[1rem]">
-                    <div className='flex flex-col space-y-4 items-center bg-containerColor'>
-                        <FaTerminal className="bg-containerColor text-textColor text-[4rem] sm:text-[4.5rem] md:text-[5rem] lg:text-[5.5rem]" />
-                        <span className='bg-containerColor text-smallFontSize font-mediumWeight text-titleColor'>Terminal</span>
-                    </div>
-                </div> */}
-
             </div>
         </div>
     </section>
