@@ -1,5 +1,5 @@
 import React from 'react'
-import cv from '../assets/Peter Gitonga - CV.pdf'
+import cv from '../assets/Peter_Gitonga_CV.pdf'
 import {FaRegFilePdf} from 'react-icons/fa'
 
 function Resume() {

@@ -22,7 +22,7 @@ const LandingPage = () => {
                 </div>
               </div>
             </div>
-            <div className='flex group gap-1 items-center group text-titleColor font-normalWeight text-[1.125rem] hover:text-titleColorDark cursor-pointer'>
+            <div className='flex group gap-1 items-center group text-textColor font-normalWeight text-[1.125rem] hover:text-titleColorDark cursor-pointer sm:text-titleColor'>
               <a href="#about" className='transition-all duration-200'>scroll</a>
               <BiDownArrowAlt className='group-hover:translate-y-1 transition-all duration-200' />
             </div>
