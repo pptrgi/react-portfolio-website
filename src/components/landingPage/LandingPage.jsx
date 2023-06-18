@@ -8,7 +8,7 @@ const LandingPage = () => {
   return (
     <section className='section min-h-screen flex justify-center items-center' >
       <div className='container'>
-          <div className='flex flex-col justify-between items-center h-[78vh] w-full sm:h-[50vh] lg:h-[70vh]'>
+          <div className='flex flex-col justify-between items-center h-[85vh] pb-[4vh] w-full sm:pb-0 sm:h-[50vh] lg:h-[70vh]'>
             <div className='flex flex-col-reverse items-center gap-[3rem] w-full sm:gap-[0.25rem] sm:flex-row'>
               <div className="sm: w-2/12" >
                 <SocialIcons />
