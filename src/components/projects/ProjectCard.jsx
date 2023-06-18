@@ -19,7 +19,7 @@ function ProjectCard({project}) {
     
   return (
     <div className='group'>
-        <div className='bg-containerColor shadow-md mx-[1rem] rounded-lg h-[600px] text-left mt-0 group-hover:-mt-[0.3rem] transition-all duration-300 group-hover:shadow-2xl sm:mx-0'>
+        <div className='bg-containerColor shadow-md mx-[1rem] rounded-lg h-[600px] text-left mt-0 group-hover:-mt-[0.5rem] transition-all duration-300 group-hover:shadow-2xl sm:mx-0'>
             {project.title === 'Coming soon' ? 
                 <div className='relative bg-[#ebecee] rounded-t-lg h-1/3 w-full opacity-30 border-b-[1px] border-b-gray-200 overflow-hidden'>
                     <img src={project.image} alt="" className='absolute h-full w-full bg-cover'/>
