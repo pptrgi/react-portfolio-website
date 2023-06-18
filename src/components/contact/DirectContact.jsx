@@ -10,14 +10,14 @@ function DirectContact() {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        if(emailAddress.includes('test') || emailAddress.includes('email') || emailAddress.includes('example')){
+        if(emailAddress.toLowerCase().includes('test') || emailAddress.toLowerCase().includes('email') || emailAddress.toLowerCase().includes('example')){
             setInvalidEmail(true)
             setEmailAddress('')
             setTimeout(() => {
                 setInvalidEmail(false)   
             }, 6000);
         }
-        if (name.includes('name') || name.includes('test')) {
+        if (name.toLowerCase().includes('name') || name.toLowerCase().includes('test')) {
             setInvalidName(true)
             setName('')
             setTimeout(() => {

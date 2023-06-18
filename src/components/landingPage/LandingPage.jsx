@@ -8,7 +8,7 @@ const LandingPage = () => {
   return (
     <section className='section min-h-screen flex justify-center items-center' >
       <div className='container'>
-          <div className='flex flex-col justify-between items-center h-[85vh] w-full sm:h-[50vh] lg:h-[70vh]'>
+          <div className='flex flex-col justify-between items-center h-[78vh] w-full sm:h-[50vh] lg:h-[70vh]'>
             <div className='flex flex-col-reverse items-center gap-[3rem] w-full sm:gap-[0.25rem] sm:flex-row'>
               <div className="sm: w-2/12" >
                 <SocialIcons />
@@ -22,9 +22,9 @@ const LandingPage = () => {
                 </div>
               </div>
             </div>
-            <div className='flex gap-1 items-center group text-titleColor font-normalWeight text-[1.125rem] hover:font-mediumWeight hover:text-titleColorDark cursor-pointer'>
-              <a href="#about">scroll</a>
-              <BiDownArrowAlt className='group-hover:translate-y-1' />
+            <div className='flex group gap-1 items-center group text-titleColor font-normalWeight text-[1.125rem] hover:text-titleColorDark cursor-pointer'>
+              <a href="#about" className='transition-all duration-200'>scroll</a>
+              <BiDownArrowAlt className='group-hover:translate-y-1 transition-all duration-200' />
             </div>
           </div>
       </div>   

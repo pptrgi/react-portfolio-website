@@ -35,7 +35,7 @@ function ProjectDetailPage() {
             </div>
             <div className='grid grid-cols-1 gap-[1.5rem] md:grid-cols-4'>
                 <div className='col-span-2'>
-                    <img src={currentProject.image} alt="" className='border-[1.5px] border-[#dadadb] rounded-md' />
+                    <img src={currentProject.image} alt="" className='border-[1.25px] border-[#dadadb] rounded-md' />
                 </div>
                 <div className=' col-span-2'>
                     <div className='flex flex-col text-textColor text-smallFontSize bg-transparent px-[0.5rem] sm:px-0'>

@@ -9,8 +9,10 @@ function Titles() {
         <div className='flex justify-center '>
           <span className='text-textColor text-smallFontSize px-[0.5rem] mb-[3rem] sm:px-[1.5rem] sm:max-w-[300px] md:px-[2rem] md:max-w-md'>A lifelong learner who enjoys creating and designing things that live on the internet, and that might include meme making.</span>
         </div>
-        <a href="#contact" className='text-[1.125rem] text-containerColor bg-titleColor
-        py-[0.75rem] px-[1.5rem] rounded-lg hover:bg-titleColorDark'>Let's chat<IoIosSend className='inline-block bg-transparent text-containerColor text-normalFontSize ml-[0.5rem] hover:bg-titleColorDark'/></a>
+        <div className='group'>
+          <a href="#contact" className='text-[1.125rem] text-containerColor bg-titleColor
+          py-[0.75rem] px-[1.5rem] rounded-lg group-hover:bg-titleColorDark transition-all duration-200'>Let's chat<IoIosSend className='inline-block bg-transparent text-containerColor text-normalFontSize ml-[0.5rem] group-hover:bg-titleColorDark transition-all duration-200'/></a>
+        </div>
     </div>
   )
 }

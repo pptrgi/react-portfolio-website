@@ -19,7 +19,7 @@ function Footer() {
               <a href="https://www.linkedin.com/in/petergitonga"><BsLinkedin size={18} className='bg-containerColor text-titleColor hover:text-titleColorDark '/></a>
               <a href="https://www.facebook.com/pptrgitonga"><BsFacebook size={18} className='bg-containerColor text-titleColor hover:text-titleColorDark '/></a>
             </div>
-            <div className='text-textColor text-smallerFontSize mt-[4.5rem] bg-containerColor sm:text-smallFontSize '>Copyright &#169; 2023 p.Gitonga</div>
+            <div className='text-textColor text-smallFontSize mt-[4.5rem] bg-containerColor'>Copyright &#169; 2023 p.Gitonga</div>
         </div>
 
     </footer>
