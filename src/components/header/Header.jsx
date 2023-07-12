@@ -11,7 +11,7 @@ const Header = () => {
     const [showMenu, setShowMenu] = useState(false);
 
     return (
-      <header className='bg-bodyColor w-full fixed top-0 left-0 z-50'>
+      <header className='bg-bodyColor w-screen fixed top-0 left-0 z-50'>
           <nav className='relative container flex flex-row justify-between items-center h-[3.5rem] sm:h-[4.5rem'>
               <a href="/" className='font-titleColor text-[18px] font-mediumWeight'>p.Gitonga</a>
               <div className={ showMenu ? "absolute left-6 top-0 right-6 grid grid-cols-3 shadow-md rounded-md gap-8 py-4 px-8 mt-14 sm:rounded-none sm:shadow-none sm:py-0 sm:px-0 sm:mt-0 sm:relative sm:gap-0 sm:flex sm:justify-evenly sm:items-center sm:space-x-[1.5rem] md:space-x-[2rem] lg:space-x-[3rem]" 
