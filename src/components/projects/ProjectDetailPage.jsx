@@ -55,7 +55,7 @@ function ProjectDetailPage() {
         </div>
         <div className='flex items-center mt-[4rem]'>
             <div className='flex justify-start '>
-                <Link to='/' className='flex gap-2 group items-center font-mediumWeight text-normalFontSize text-titleColor'>
+                <Link to='/' className='flex gap-[5px] group items-center font-mediumWeight text-normalFontSize text-titleColor sm:gap-2'>
                     <span className='group-hover:-translate-x-1 group-hover:text-black'><BiLeftArrowAlt /></span>
                     <span className='group-hover:text-black'>Back</span>
                 </Link>
