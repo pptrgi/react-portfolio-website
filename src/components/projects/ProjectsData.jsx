@@ -4,7 +4,7 @@ import todoApp from "/images/todoApp.png";
 import personalWebsite from "/images/personalWebsite.png";
 import seedlingsByMwalim from "/images/seedlingsByMwalim.png";
 import noImage from "/images/no-image.png";
-import nyumbaHubApi from "/images/nyumbaHub_API.png";
+import nyumbaHubApi from "/images/nyumbaHubAPI.png";
 
 
 export const serveProjects = () => {
@@ -119,11 +119,11 @@ export const serveProjects = () => {
       summary:
       "NyumbaHub API is developed with Node Express.js employing the MVC design pattern to serve the vacant houses data from a MongoDB database. It includes public and protected routes and a homepage to enable users efficiently navigate through it.",
       description:
-      "The API is built with Node Express.js employing the MVC design pattern and includes a connection to MongoDB. It is hosted on Netlify as a serverless function. This project serves as the backend for the NyumbaHub vacant houses project.\n\nThe database includes four collections namely users, properties, categories and types. When a property is added it is associated with a type and categories. A property can only belong to one type, for instance, One Bedroom, but can belong to one or more categories, e.g. For Rent, Featured, Reduced Price. Similarly, each type or category has an array of properties associated with it. Some select features related to user include ability to change and reset forgotten password, block and unblock user, wishlist feature, update user's details. For a property user can add a review, upload property images and supports filter, sort, field limit and pagination fetching all propeties.\n\nSome route endpoints are publicly accessed without signing in, other routes are protected and to be accessed either after signing in or by special/priviledged users.\n\nThe main features of the API include:",
+      "The API is built with Node Express.js employing the MVC design pattern and includes a connection to MongoDB. It is hosted on Netlify as a serverless function. This project serves as the backend for the NyumbaHub vacant houses project.\n\nThe database includes four collections namely users, properties, categories and types. When a property is added it is associated with a type and categories. A property can only belong to one type, for instance, Apartment, but can belong to one or more categories, e.g. For Rent, Featured, Reduced Price. Similarly, each type or category has an array of properties associated with it. Some select features related to user include ability to change and reset forgotten password, block and unblock user, wishlist feature, update user's details. For a property user can add a review, upload property images and supports filtering, sorting, selecting fields and pagination fetching all propeties.\n\nSome route endpoints are publicly accessed, other routes are protected and can only be accessed either after signing in or by special/privileged users.\n\nThe main features of the API include:",
       features: [
         "MongoDB connection",
         "Authentication and authorization",
-        "Local image upload to multer, resize with sharp and cloudinary for cloud upload",
+        "Multer image storage, resize with sharp and cloudinary for cloud upload",
         "Serverless function",
         "Documents referencing",
         "User reset their forgotten password",
