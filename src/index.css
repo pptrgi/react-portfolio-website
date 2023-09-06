@@ -3,13 +3,15 @@
 @tailwind utilities;
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-*, ::after, ::before {
-    @apply bg-bodyColor;
+*,
+::after,
+::before {
+  @apply bg-bodyColor;
 }
 
-.section{
-    @apply pt-[6rem] pb-[2rem] px-[1.5rem];
+.section {
+  @apply pt-[6rem] pb-[2rem] px-[1.5rem];
 }
