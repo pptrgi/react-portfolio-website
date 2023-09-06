@@ -1,11 +1,9 @@
 import React from "react";
 import blogWin from "/images/blogWinDjango.png";
-import todoApp from "/images/todoApp.png";
 import personalWebsite from "/images/personalWebsite.png";
 import seedlingsByMwalim from "/images/seedlingsByMwalim.png";
 import noImage from "/images/no-image.png";
-import nyumbaHubApi from "/images/nyumbaHubAPI.png";
-
+import nyumbaHub from "/images/nyumbahub.png";
 
 export const serveProjects = () => {
   const projectsInfo = [
@@ -29,26 +27,6 @@ export const serveProjects = () => {
     },
     {
       id: 2,
-      title: "ToDo App",
-      summary:
-        "Developed using JavaScript and styled with vanilla CSS is a simple and user-friendly app that allows users to add new tasks, categorize them as either business or personal, edit and delete tasks, and mark them as completed with a checkbox.",
-      description:
-        "The ToDo App was developed using JavaScript and styled with vanilla CSS. It's a simple and user-friendly app that allows users to add new tasks, categorize them as either business or personal, edit and delete tasks, and mark them as completed with a checkbox.\n\nThe tasks are saved and retrieved from the device's local storage on page load or as you add them - they won't disappear on page refresh. To update a task, the task's body is displayed on a disabled text field which is re-enabled to accept input when the edit button is clicked.\n\nThe app's clean, intuitive and straightforward design makes it easy for users to navigate and manage their tasks effectively.\n\nThe app's main features include:",
-      features: [
-        "Categorize tasks as business or personal tasks",
-        "Check the completed tasks",
-        "Edit and update your already added tasks",
-        "Delete button to remove the completed or unwanted tasks",
-        "Add new tasks",
-        "Display for all existing tasks",
-      ],
-      image: todoApp,
-      techStack: ["JavaScript", "HTML", "Vanilla CSS"],
-      gitHub: "https://github.com/pptrgi/todo-vanilla-JS",
-      visit: "https://ptrgitonga.vercel.app",
-    },
-    {
-      id: 3,
       title: "Personal Website",
       summary:
         "The website is built with React and styled with Tailwind. It features a modern design with a clear and concise navigation system, visually appealing landing page and sections for the bio, skills, services, projects and contact information, each with their own set of features.",
@@ -77,12 +55,12 @@ export const serveProjects = () => {
       visit: "https://ptrgitonga.vercel.app",
     },
     {
-      id: 4,
+      id: 3,
       title: "Seedlings by Mwalim",
       summary:
-        "A fully responsive site built with React on the frontend and integrated with M-Pesa (STK push) for the payment service. It employs a number of technologies including Redux to manage the state of the cart operations, Express.js in the backend and Firebase for authentication.",
+        "A fully responsive site built with React on the frontend and integrated with M-Pesa (STK push) for the payment service. It employs a number of technologies including Redux to manage the state of the cart operations, Node.js in the backend and Firebase for authentication.",
       description:
-        "Inspired by my uncle's (Mr. Njagi) seedlings farm, Seedlings By Mwalim is an online seedlings selling site that is integrated with M-Pesa for the payment service. It is built with React on the frontend and the Express.js backend communicates with Safaricom's Daraja API to initiate the payment process.\n\nSigned in or not the application will allow the user to add items to cart. Items in the shopping cart are displayed in the Shopping Cart section of the cart page with buttons to increase or decrease the item quantity while there. To checkout, the user needs to sign in (if they weren't already) with their Google account. In this application the user sign-in method is Google's Sign-In With Popup provided by Firebase authentication.\n\nChecking out, the user is required to enter their Safaricom phone number as 07... . When the user clicks the Pay Now button, the phone number they entered and the total amount on the Checkout Totals section of the cart page are passed to the backend server.\n\nThe server sends a get request with basic auth authorization headers to the Daraja API. The API will receive encrypted Daraja account credentials for authentication. If successful, the server receives an access token that will enable access and making of requests to certain API endpoints. The server then sends a post request with the data required by MPesa to process an MPesa request including sender's and receiver's information, together with the earlier received access token as an authorization header, to the Daraja API endpoint responsible for processing these types of requests. The API then sends an STK to the user's phone prompting them to enter their MPesa password to complete the transaction. After the user pays, a payment processing request is sent to MPesa by the API.\n\nThe application uses Redux library to manage the state of the cart operations, signed-in user, and filter products by category from various components. Device's local storage persists the state data thanks to Redux-persist.\n\nIt is styled with Tailwind CSS, and Canva is used to create the logo.\n\nThe main features are:",
+        "Inspired by my uncle's (Mr. Njagi) seedlings farm, Seedlings By Mwalim is an online seedlings selling site that is integrated with M-Pesa for the payment service. It is built with React on the frontend and the Node.js backend communicates with Safaricom's Daraja API to initiate the payment process.\n\nSigned in or not the application will allow the user to add items to cart. Items in the shopping cart are displayed in the Shopping Cart section of the cart page with buttons to increase or decrease the item quantity while there. To checkout, the user needs to sign in (if they weren't already) with their Google account. In this application the user sign-in method is Google's Sign-In With Popup provided by Firebase authentication.\n\nChecking out, the user is required to enter their Safaricom phone number as 07... . When the user clicks the Pay Now button, the phone number they entered and the total amount on the Checkout Totals section of the cart page are passed to the backend server.\n\nThe backend sends a get request with basic auth authorization headers to Daraja API. The API will receive base64 encoded Daraja account credentials for authentication. If successful, the backend receives an access token that will enable access and make requests to certain Daraja API endpoints. The backend then sends a post request with the data required by MPesa to process an MPesa request including sender's and receiver's information, together with the earlier received access token as an authorization header, to the Daraja API endpoint responsible for processing these types of requests. The API then sends an STK to the user's phone prompting them to enter their MPesa password to complete the transaction. After the user pays, a payment processing request is sent to MPesa by the API.\n\nThe application uses React Redux to manage the state of the cart operations, signed-in user, and filter products by category from various components. Device's local storage persists the state data thanks to Redux-persist.\n\nIt is styled with Tailwind CSS, and Canva is used to create the logo.\n\nThe main features are:",
       features: [
         "M-Pesa STK push payment method",
         "Fully responsive",
@@ -90,7 +68,7 @@ export const serveProjects = () => {
         "Sign-in with popup by Google",
         "Offer window period countdown",
         "Swiper for recommended, best selling and all season products",
-        "Device local storage for state data",
+        "Device local storage for state persistence",
         "Navigation system with nav bar and hamburger menu",
         "Email service by EmailJS",
       ],
@@ -114,43 +92,64 @@ export const serveProjects = () => {
       visit: "https://seedlingsbymwalim.vercel.app",
     },
     {
-      id: 5,
-      title: "NyumbaHub API",
+      id: 4,
+      title: "NyumbaHub MERN Stack",
       summary:
-      "NyumbaHub API is developed with Node Express.js employing the MVC design pattern to serve the vacant houses data from a MongoDB database. It includes public and protected routes and a homepage to enable users efficiently navigate through it.",
+        "NyumbaHub is a vacant houses finding service based in Kenya. It includes a non-relational database MongoDB, Node/Express.js RESTful API hosted as a serverless function, and a React frontend where the house properties data is served to.",
       description:
-      "The API is built with Node Express.js employing the MVC design pattern and includes a connection to MongoDB. It is hosted on Netlify as a serverless function. This project serves as the backend for the NyumbaHub vacant houses project.\n\nThe database includes four collections namely users, properties, categories and types. When a property is added it is associated with a type and categories. A property can only belong to one type, for instance, Apartment, but can belong to one or more categories, e.g. For Rent, Featured, Reduced Price. Similarly, each type or category has an array of properties associated with it. Some select features related to user include ability to change and reset forgotten password, block and unblock user, wishlist feature, update user's details. For a property user can add a review, upload property images and supports filtering, sorting, selecting fields and pagination fetching all propeties.\n\nSome route endpoints are publicly accessed, other routes are protected and can only be accessed either after signing in or by special/privileged users.\n\nThe main features of the API include:",
+        "NyumbaHub is a vacant houses finding service based in Kenya. It includes a non-relational database MongoDB, Node/Express.js RESTful API hosted as a serverless function, and a React frontend where the house properties data is served to.\n\nThe API employs the MVC design pattern. Using mongoose ORM, there are defined schemas for the 4 models used in the application. User-related, property-related, category-related and type-related routes have their logic and functionality implemented in the controllers' dir containing a folder for each of the mentioned groups. Public routes are available to all users while private routes are protected with JSON Web Token (JWT) and either require signing in to access service or can only be accessed by privileged users. The backend is a serverless function and has a UI to help users efficiently navigate through it.\n\nThe application's frontend includes an aesthetic, functional and easy to use fully responsive UI that enhances UX while still putting the UI/UX design principles into consideration. With Redux and redux toolkit the application is able to manage the state effectively, thanks to createAsyncThunk() the frontend can make API calls and handle loading, success and error states in async operations. It has a ton of navigation options including breadcrumbs, pagination, ham menu for mobile and header navigation. To enhance security, the frontend will privatize routes that need not be open.\n\nThe backend accepts URL query from a request to query the database and return filtered and/or sorted response data. Included also is the well-outlined terms of service and privacy policy for the overall application.\n\nThe main features of the overall application are:",
       features: [
-        "MongoDB connection",
-        "Authentication and authorization",
-        "Multer image storage, resize with sharp and cloudinary for cloud upload",
-        "Serverless function",
-        "Documents referencing",
-        "User reset their forgotten password",
-        "MVC design pattern",
-        "Custom middlewares"
+        "Backend".toUpperCase(),
+        "Authorization and authentication",
+        "Server-side rendering",
+        "Public and Protected routes with JSON Web Token(JWT)",
+        "Database integration",
+        "Images upload",
+        "Frontend".toUpperCase(),
+        "State management",
+        "Fully responsive",
+        "Private and open routes",
+        "Pagination",
+        "Breadcrumbs",
+        "Slider",
+        "Others".toUpperCase(),
+        "Filter and sort",
+        "Routing",
+        "Privacy Policy",
+        "Terms of Service",
+        "Admin dashboard in the works",
       ],
-      image: nyumbaHubApi,
+      image: nyumbaHub,
       techStack: [
         "Node.js",
+        "React",
         "Express.js",
         "Mongoose",
+        "React Redux",
+        "Redux Toolkit",
         "Mongodb",
         "Cloudinary",
-        "Nodemailer",
-        "Cookie-parser",
-        "Cors",
         "Multer",
         "Sharp",
+        "Nodemailer",
+        "EmailJS",
+        "Cookie-parser",
+        "Cors",
         "Serverless-http",
-        "Jsonwebtoken",
+        "JSON Web Token(JWT)",
         "Bcrypt",
+        "Formik",
+        "Yup",
+        "React Router",
+        "React Paginate",
+        "React Toastify",
+        "React Helmet",
       ],
       gitHub: "https://github.com/pptrgi/nyumbahub_api_serverless_function",
-      visit: "https://nyumbahub.netlify.app",
+      visit: "https://nyumbahub.vercel.app",
     },
     {
-      id: 6,
+      id: 5,
       title: "Coming soon",
       summary:
         "I'm currently putting the finishing touches on this latest project and I can't wait to share it with you! While I can't reveal too much just yet, I can promise it's going to be something truly special. Stay tuned for more information, sneak peeks and updates coming soon.",
