@@ -2,16 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
-}
-
 *,
 ::after,
 ::before {
   @apply bg-bodyColor;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .section {
   @apply pt-[6rem] pb-[2rem] px-[1.5rem];
+}
+
+/* Change the text-highlighting color */
+::selection {
+  background-color: #333333;
+  color: #fafafa;
 }
