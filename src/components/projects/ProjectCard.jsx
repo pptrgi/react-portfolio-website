@@ -23,7 +23,7 @@ function ProjectCard({ project }) {
           <div className="relative bg-[#ebecee] rounded-t-lg h-1/3 w-full opacity-30 border-b-[1px] border-b-gray-200 overflow-hidden">
             <img
               src={project.image}
-              alt="no-image-placeholder"
+              alt="No-image Placeholder"
               className="absolute h-full w-full bg-cover"
             />
           </div>
@@ -31,7 +31,7 @@ function ProjectCard({ project }) {
           <div className="relative bg-[#ebecee] rounded-t-lg h-1/3 w-full border-b-[1px] border-b-gray-100 overflow-hidden">
             <img
               src={project.image}
-              alt={`${project?.title.toLowerCase().split(" ").join("-")}-image`}
+              alt={`${project?.title} Project`}
               className="absolute h-full w-full bg-cover"
             />
           </div>

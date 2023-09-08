@@ -1,6 +1,6 @@
 import React from "react";
-import cv from "../assets/Peter_Gitonga_CV_2.pdf";
 import { FaRegFilePdf } from "react-icons/fa";
+import cv from "../assets/Peter_Gitonga_CV_2.pdf";
 
 function Resume() {
   return (

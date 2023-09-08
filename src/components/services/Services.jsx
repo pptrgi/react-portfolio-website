@@ -1,11 +1,5 @@
 import { useState } from "react";
-import {
-  FaRegCheckCircle,
-  FaRegImage,
-  FaDraftingCompass,
-  FaDoorOpen,
-  FaDove,
-} from "react-icons/fa";
+import { FaRegCheckCircle } from "react-icons/fa";
 
 function Services() {
   const [services, setServices] = useState([
@@ -52,7 +46,7 @@ function Services() {
         The services I offer
       </span>
       <div className="container mt-[4rem]">
-        <div className="grid grid-cols-1 items-center gap-4 mx-[1.5rem] sm:grid-cols-2 lg:grid-cols-3 sm:gap-3 md:gap-4">
+        <div className="grid grid-cols-1 items-center gap-4 mx-[1.25rem] sm:grid-cols-2 md:grid-cols-3 sm:gap-3 sm:mx-[0.75rem] md:mx-[0.25rem] lg:mx-[1.5rem] md:gap-2 lg:gap-4">
           {services.map((service, index) => {
             return (
               <div key={index} className="group">
@@ -71,7 +65,7 @@ function Services() {
                           className="flex items-center space-x-2 md:space-x-3 bg-containerColor"
                         >
                           <FaRegCheckCircle />
-                          <p className="bg-containerColor text-left">
+                          <p className="bg-containerColor text-left truncate">
                             {activity}
                           </p>
                         </div>

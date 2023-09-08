@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { useLocation, Link } from "react-router-dom";
 import { BiLeftArrowAlt } from "react-icons/bi";
 import { FaExternalLinkAlt } from "react-icons/fa";
@@ -48,7 +47,7 @@ function ProjectDetailPage() {
           <div className="col-span-2">
             <img
               src={currentProject.image}
-              alt=""
+              alt={`${currentProject.title} Project`}
               className="border-[1.25px] border-[#dadadb] rounded-md"
             />
           </div>

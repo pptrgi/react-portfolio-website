@@ -15,7 +15,7 @@ function About() {
             <img
               src="/images/forAbout.png"
               className="w-[250px] rounded-xl sm:w-[250px] md:w-[280px] lg:w-[300px]"
-              alt="peter-about-image"
+              alt="Peter About Section"
             />
           </div>
           <div className="flex flex-col-reverse justify-between pl-[0.75rem] pr-[0.25rem] h-[450px] text-left sm:w-1/2 sm:flex-col md:h-[450px] lg:h-[400px]">

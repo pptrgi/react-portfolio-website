@@ -12,8 +12,9 @@ const LandingPage = () => {
               <div className="block relative h-10 w-10 rounded-full overflow-hidden lg:hidden">
                 <img
                   src="/images/forHome.png"
-                  alt="peter-home-image"
+                  alt="Peter Landing Page"
                   className="absolute bg-gradient-to-br from-containerColor to-textColor h-full w-full object-cover z-10"
+                  loading="eager"
                 />
               </div>
               <p className="text-normalFontSize text-textColor tracking-wide">
@@ -28,7 +29,7 @@ const LandingPage = () => {
                   peter gitonga
                 </p>
                 <div className="flex space-x-[0.75rem] items-center ml-[0.5rem] sm:ml-[2rem] sm:space-x-[0.9rem]">
-                  <span className="w-3 h-[2px] bg-textColor" />
+                  <span className="w-[0.65rem] h-[2px] bg-titleColor sm:w-3" />
                   <h4 className="capitalize text-h2FontSize">
                     fullstack developer
                   </h4>
@@ -41,15 +42,14 @@ const LandingPage = () => {
                   making.
                 </p>
               </div>
-              <div className="group mt-[3.5rem] sm:mt-[4rem]">
+              <div className="group mt-[4.5rem] sm:mt-[5rem]">
                 <a
                   href="#contact"
                   className="text-[1.125rem] text-containerColor bg-titleColor
-          py-[0.75rem] px-[1.5rem] rounded-lg group-hover:bg-titleColorDark transition-all duration-200 tracking-wide"
+          py-[1rem] px-[1.5rem] rounded-lg group-hover:bg-titleColorDark transition-all duration-200 tracking-wide"
                 >
                   Let's chat
-                  <span className=""></span>
-                  <IoIosSend className="inline-block bg-transparent ml-[0.5rem] group-hover:bg-titleColorDark transition-all duration-200" />
+                  <IoIosSend className="inline-block bg-transparent ml-[0.65rem] text-h3FontSize group-hover:bg-titleColorDark transition-all duration-200" />
                 </a>
               </div>
             </div>
@@ -57,14 +57,14 @@ const LandingPage = () => {
               <div className="relative h-[320px] w-[320px] rounded-full overflow-hidden">
                 <img
                   src="/images/forHome.png"
-                  alt="peter-home-image"
+                  alt="Peter Landing Page"
                   className="absolute bg-gradient-to-br from-containerColor to-textColor h-full w-full object-cover z-10"
-                  loading="priority"
+                  loading="eager"
                 />
               </div>
             </div>
           </div>
-          <div className="flex justify-start items-start pb-[1rem] sm:pb-0">
+          <div className="flex justify-start items-start">
             <SocialIcons />
           </div>
         </div>

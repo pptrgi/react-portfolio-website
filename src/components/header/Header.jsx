@@ -1,13 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import {
-  BiHome,
-  BiUser,
-  BiWrench,
-  BiBriefcase,
-  BiMenu,
-  BiX,
-} from "react-icons/bi";
+import { BiUser, BiWrench, BiBriefcase, BiMenu, BiX } from "react-icons/bi";
 import { IoIosSend } from "react-icons/io";
 import { FaTasks } from "react-icons/fa";
 import { FaRegFilePdf } from "react-icons/fa";
@@ -39,7 +32,7 @@ const Header = () => {
           ref={menuRef}
           className={
             showMenu
-              ? "absolute left-3 top-0 right-3 grid grid-cols-3 shadow-md rounded-sm gap-[2.5rem] pt-[4rem] pb-[2rem] px-[1.5rem] mt-14 sm:rounded-none sm:shadow-none sm:py-0 sm:px-0 sm:mt-0 sm:relative sm:gap-0 sm:flex sm:justify-evenly sm:items-center sm:space-x-[1.5rem] md:space-x-[2rem] lg:space-x-[3rem]"
+              ? "absolute left-2 top-0 right-2 grid grid-cols-3 shadow-md rounded-sm gap-[2.5rem] pt-[4rem] pb-[2rem] px-[1.5rem] mt-14 sm:rounded-none sm:shadow-none sm:py-0 sm:px-0 sm:mt-0 sm:relative sm:gap-0 sm:flex sm:justify-evenly sm:items-center sm:space-x-[1.5rem] md:space-x-[2rem] lg:space-x-[3rem]"
               : "hidden sm:rounded-none sm:shadow-none sm:py-0 sm:px-0 sm:mt-0 sm:relative sm:gap-0 sm:flex sm:justify-evenly sm:items-center sm:space-x-[1.5rem] md:space-x-[2rem] lg:space-x-[3rem]"
           }
         >
