@@ -9,7 +9,7 @@ function ContactMeans() {
         Email | Whatsapp | Call
       </h3>
       <div className="flex flex-col items-center space-y-[0.75rem]">
-        <div className="bg-containerColor flex flex-col items-center gap-[0.4rem] pt-[1.25rem] pb-[1rem] px-[2.5rem] rounded-sm shadow-md w-[255px] sm:w-[250px] lg:w-[300px]">
+        <div className="bg-containerColor flex flex-col items-center gap-[0.4rem] pt-[1.25rem] pb-[1rem] px-[2.5rem] rounded-sm shadow-md w-[260px] sm:w-[250px] lg:w-[300px]">
           <BsEnvelopeAt className="bg-containerColor text-titleColor text-h2FontSize" />
           <h3 className="bg-containerColor text-normalFontSize text-titleColor font-mediumWeight">
             Email
@@ -28,7 +28,7 @@ function ContactMeans() {
           </div>
         </div>
 
-        <div className="bg-containerColor flex flex-col items-center gap-[0.4rem] pt-[1.25rem] pb-[1rem] px-[2.5rem] rounded-sm shadow-md w-[255px] sm:w-[250px] lg:w-[300px]">
+        <div className="bg-containerColor flex flex-col items-center gap-[0.4rem] pt-[1.25rem] pb-[1rem] px-[2.5rem] rounded-sm shadow-md w-[260px] sm:w-[250px] lg:w-[300px]">
           <FaWhatsapp className="bg-containerColor text-titleColor text-h2FontSize" />
           <h3 className="bg-containerColor text-normalFontSize text-titleColor font-mediumWeight">
             Whatsapp
@@ -47,7 +47,7 @@ function ContactMeans() {
           </div>
         </div>
 
-        <div className="bg-containerColor flex flex-col items-center gap-[0.4rem] pt-[1.25rem] pb-[1rem] px-[2.5rem] rounded-sm shadow-md w-[255px] sm:w-[250px] lg:w-[300px]">
+        <div className="bg-containerColor flex flex-col items-center gap-[0.4rem] pt-[1.25rem] pb-[1rem] px-[2.5rem] rounded-sm shadow-md w-[260px] sm:w-[250px] lg:w-[300px]">
           <FaPhone className="bg-containerColor text-titleColor text-h2FontSize" />
           <h3 className="bg-containerColor text-normalFontSize text-titleColor font-mediumWeight">
             Phone Call
@@ -62,7 +62,7 @@ function ContactMeans() {
             >
               {" "}
               <a href="tel:254700119134" className="bg-transparent">
-                Call Now
+                Call now
               </a>
             </span>
           </div>

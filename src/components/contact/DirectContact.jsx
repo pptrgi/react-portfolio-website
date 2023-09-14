@@ -32,10 +32,10 @@ function DirectContact() {
       }, 6000);
     } else {
       emailjs.sendForm(
-        "service_xcqtt9b",
-        "template_dwk3grp",
+        `${process.env.REACT_APP_SERVICE_ID}`,
+        `${process.env.REACT_APP_TEMPLATE_ID}`,
         form.current,
-        "fKjM8gV9AD2Vje01P"
+        `${process.env.REACT_APP_EMAIL_PUBLIC_KEY}`
       );
       e.target.reset();
       setEmailAddress("");

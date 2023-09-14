@@ -73,14 +73,14 @@ function ProjectCard({ project }) {
               )}
               {project.title === "Coming soon" ? (
                 <span className="bg-titleColor px-4 py-[6px] text-smallFontSize text-containerColor font-mediumWeight rounded-full opacity-30 cursor-default">
-                  GitHub {">"}
+                  GitHub
                 </span>
               ) : (
                 <a
                   href={project.gitHub}
                   className="bg-titleColor px-4 py-[6px] text-smallFontSize text-containerColor font-mediumWeight rounded-full hover:bg-titleColorDark cursor-pointer"
                 >
-                  GitHub {">"}
+                  GitHub
                 </a>
               )}
             </div>
