@@ -33,17 +33,16 @@ function DirectContact() {
     } else {
       emailjs
         .sendForm(
-          `${process.env.REACT_APP_SERVICE_ID}`,
-          `${process.env.REACT_APP_TEMPLATE_ID}`,
+          `${import.meta.env.VITE_SERVICE_ID}`,
+          `${import.meta.env.VITE_TEMPLATE_ID}`,
           form.current,
-          `${process.env.REACT_APP_EMAIL_PUBLIC_KEY}`
+          `${import.meta.env.VITE_EMAIL_PUBLIC_KEY}`
         )
         .then(() => {
           e.target.reset();
           setEmailAddress("");
           setName("");
-        })
-        .catch((err) => console.log(err));
+        });
     }
   };
 
