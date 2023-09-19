@@ -9,8 +9,9 @@ The application has a single 'store' for the projects data. Using React Router l
 The website includes sections for the bio, skills, services, projects and contact information, each with their own set of features.
 
 **Here are the main features of the website:**
+
 1. Navigation system includes a navigation bar, hamburger menu and a scroll down button
-1. Email service support by EmailJS library and phone number  copy-to-clipboard capability in the contacts section 
+1. Email service support by EmailJS library
 1. Projects section includes a detail page for each project and links to the project's GitHub repository and the website
 1. Skills section displays each skill with its respective icon and name
 1. Three fully responsive service cards with services offered and their descriptions in the services section
@@ -19,22 +20,23 @@ The website includes sections for the bio, skills, services, projects and contac
 1. The Footer includes links to my social media profiles and quick links, and copyright information
 
 ## Installation
+
 1. Clone the repository to your local machine: `git clone git@github:pptrgi/react-portfolio-website.git`
 1. Navigate to the project directory: `cd react-portfolio-website`
 1. Install the dependencies: `npm install`
-1. Start the development server: `npm start`
-This will open the app in your default browser at http://localhost:3000
+1. Start the development server: `npm run dev`
+   This will open the app in your default browser at http://localhost:3000
 
 ## Usage
+
 Once you have the development server running, you can start using and modifying the app to your liking.
 
 ## License
+
 This project is licensed under the MIT License.
 
-## Contributing
-If you would like to contribute to this project, please open a pull request. 
-
 ## Acknowledgments
+
 - I'd like to acknowledge the use of React library in the development of this project
 - Thanks Font Awesome for the icons used in this application
 - Emailjs provides the email service
