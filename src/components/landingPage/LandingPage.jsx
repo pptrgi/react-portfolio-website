@@ -17,7 +17,7 @@ const LandingPage = () => {
                   loading="eager"
                 />
               </div>
-              <p className="text-normalFontSize text-textColor tracking-wide">
+              <p className="text-smallFontSize text-textColor tracking-wide sm:text-normalFontSize">
                 Hi, meet me
               </p>
             </div>
@@ -30,13 +30,13 @@ const LandingPage = () => {
                 </p>
                 <div className="flex space-x-[0.75rem] items-center ml-[0.5rem] sm:ml-[2rem] sm:space-x-[0.9rem]">
                   <span className="w-[0.65rem] h-[2px] bg-titleColor sm:w-3" />
-                  <h4 className="capitalize text-h2FontSize">
+                  <h4 className="text-h3FontSize capitalize sm:text-h2FontSize">
                     fullstack developer
                   </h4>
                 </div>
               </div>
               <div className="mt-[2.25rem] ">
-                <p className="text-textColor text-normalFontSize tracking-wide leading-6 sm:max-w-[420px]">
+                <p className="text-textColor text-smallFontSize tracking-wide leading-6 sm:max-w-[420px] sm:text-normalFontSize">
                   A lifelong learner who enjoys creating and designing things
                   that live on the internet, and that might also include meme
                   making.
