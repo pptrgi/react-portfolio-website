@@ -26,10 +26,10 @@ export const services = [
     description:
       "Are you interested in feedback or advice for your project? I can help with tips and tricks.",
     serviceInfo: [
-      "Personal Website",
-      "Blog",
-      "Company Website",
-      "E-Commerce Website",
+      "Personal, company or ecommerce site",
+      "Mobile application development",
+      "Client-specific services",
+      "Maybe you're not sure yet",
     ],
   },
 ];
