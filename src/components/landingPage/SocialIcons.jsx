@@ -1,11 +1,12 @@
 import React from "react";
-import { BsFacebook, BsTwitter, BsLinkedin, BsWhatsapp } from "react-icons/bs";
+import { BsFacebook, BsLinkedin, BsWhatsapp } from "react-icons/bs";
+import { RiTwitterXFill } from "react-icons/ri";
 
 function SocialIcons() {
   return (
     <div className="flex flex-row justify-center space-x-4 items-center sm:space-x-[1.25rem]">
       <a href="https://twitter.com/ptrgitonga">
-        <BsTwitter
+        <RiTwitterXFill
           size={18}
           className="bg-containerColor text-titleColor hover:text-titleColorDark"
         />
